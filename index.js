@@ -27,6 +27,7 @@ function getRandomCard() {
 }
 
 function startGame() {
+    hasBlackJack = false
     isAlive = true
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
@@ -53,6 +54,8 @@ function renderGame() {
     }
     messageEl.textContent = message
 }
+
+
 
 
 function newCard() {
